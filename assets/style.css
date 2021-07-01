@@ -22,6 +22,14 @@ body {
     color: var(--dark-color);
     background-color: var(--light-color);
     background-image: url(./images/photo-1498050108023-c5249f4df085.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+p:hover {
+    font-weight: bold;
+    text-shadow:2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 /*  start header css */
@@ -33,14 +41,17 @@ header {
     justify-content: space-between;
     text-align: center;
     padding: 25px;
+    
 }
 
 
 header h1 a {
     text-decoration: none;
     color: var(--light-color);
-    padding: none;
+    padding: 0 3px 0 3px;;
     margin: none;
+    border-right: 3px solid var(--yellow);
+    border-left: 3px solid var(--yellow);
 }
 
 header nav {
@@ -78,10 +89,17 @@ header nav ul li a:hover {
 .bio {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
     padding: 20px;
     margin: 150px 40px 40px 40px;
     background-color:rgba(20, 33, 61, .8);
+    border-left: 5px solid var(--dark-yellow);
+    color: var(--light-color);
+    font-size: 18px;
+}
+
+.bio-img {
+    flex: 1;
 }
 
 .bio h2 {
@@ -91,17 +109,23 @@ header nav ul li a:hover {
     font-size: 50px;
     display: flex;
     flex-flow: row wrap;
-    justify-content:space-around;
+    justify-content:left;
     text-shadow:2px 2px 10px rgba(0, 0, 0, 0.8);
+
 }
 
 .bio h2:hover {
     color: var(--dark-yellow);
+    font-style:italic;
 }
 
-.bio {
-    color: #e5e5e5;
-    text-align: center;
-    font-size: 18px;
+.bio h3  {
+    padding: 10px 0 10px 5px;
+    font-size: 25px;
+    color: var(--yellow);
 }
 
+.bio h3:hover {
+    color: var(--dark-yellow);
+    font-style:italic;
+}
