@@ -89,32 +89,32 @@ header nav ul li a:hover {
 
 .bio {
     display: flex;
-    justify-content:space-around;
-    width: 40%;
+    width: 50%;
     padding: 20px;
     margin: 50px 0 0 20px;
     background-color:rgba(20, 33, 61, .8);
     border-left: 5px solid var(--dark-yellow);
     color: var(--light-color);
-    font-size: 18px;
-    flex-flow: row wrap;
-    
+    font-size: 20px;
 }
 
 .bio img {
-    width: 35%;
-    margin-right: 30px;    
+    width: 30%;
+    margin-right: 30px;
+    flex: 1;
+    object-fit: contain;   
+    align-self: flex-start;
 }
 
 .bio-text {
     display: flex;
-    width: 35%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-flow: row wrap;
     padding: 10px;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    flex: 1;
 }
 
 .bio h2 {
@@ -144,14 +144,29 @@ header nav ul li a:hover {
 
 @media screen and (max-width: 980px)  {
     .bio {
-        width: 60%;
+        width: 80%;
         line-height: 1.5;
+        flex-flow: column wrap;
+        margin-bottom: 20px;
+    }
+    .bio-text {
+        width: 100%;
     }    
+    .bio img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 575px)  {
     .bio {
         width: 80%;
         line-height: 1.5;
+        flex-flow: column wrap;
+    }
+    .bio-text {
+        width: 100%;
     }    
+    .bio img {
+        width: 100%;
+    }
 }
