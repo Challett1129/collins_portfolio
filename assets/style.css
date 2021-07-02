@@ -51,7 +51,7 @@ header span {
 header h1 a {
     text-decoration: none;
     color: var(--light-color);
-    padding: 0 3px 0 3px;;
+    padding: 0 3px 0 3px;
     margin: none;
 }
 
@@ -144,10 +144,66 @@ header nav ul li a:hover {
     font-style:italic;
 }
 
+/* css structure for content page */
+/* sets background image */
+.content-body {
+    background-image: url(./images/photo-1498050108023-c5249f4df085.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+/* creates flex-box for images */
 .wrapper {
-    margin: 10px;
-    padding: 10px;
-    background-image: none;
+    display: flex; 
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    text-align:center;
+    background-color: rgba (255, 255, 255, .8);
+    height:100%;
+}
+
+.my-work.title {
+    align-content: center;
+}
+
+
+.main-img {
+    width: 70%;
+    padding:0;
+    border: 5px solid var(--yellow);
+    flex:0;
+    position:relative;
+    box-shadow:  2px 10px 10px 5px black;
+}
+
+.secondary-img {
+    flex:0;
+    width: 34.8%;
+    border: 5px solid var(--yellow);
+    max-height:400px;
+    position:relative;
+    box-shadow:  2px 10px 10px 5px black;
+
+}
+
+.bio-centered {
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    margin: 50px auto 0 auto;
+    background-color:rgba(20, 33, 61, .8);
+    border-left: 5px solid var(--dark-yellow);
+    color: var(--light-color);
+    font-size: 20px;
+}
+
+
+
+.main-img:hover, .secondary-img:hover {
+    -webkit-filter: brightness(120%);
 }
 @media screen and (max-width: 980px)  {
     .bio {
