@@ -36,6 +36,7 @@ header {
     justify-content: space-between;
     text-align: center;
     padding: 25px;
+    width: 100%;
     
     
 }
@@ -88,31 +89,32 @@ header nav ul li a:hover {
 
 .bio {
     display: flex;
-    justify-content:space-between;
-    width: 20%;
+    justify-content:space-around;
+    width: 40%;
     padding: 20px;
-    margin-right:5px;
+    margin: 50px 0 0 20px;
     background-color:rgba(20, 33, 61, .8);
     border-left: 5px solid var(--dark-yellow);
     color: var(--light-color);
     font-size: 18px;
-    flex: 1;
     flex-flow: row wrap;
     
 }
 
 .bio img {
-    flex: 1 15%;
-    width: 100%;
+    width: 35%;
     margin-right: 30px;    
 }
 
 .bio-text {
-    display: flex; 
-    justify-content: space-between;
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
     flex-flow: row wrap;
     padding: 10px;
     width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .bio h2 {
@@ -140,9 +142,16 @@ header nav ul li a:hover {
     font-style:italic;
 }
 
+@media screen and (max-width: 980px)  {
+    .bio {
+        width: 60%;
+        line-height: 1.5;
+    }    
+}
+
 @media screen and (max-width: 575px)  {
     .bio {
-        width: 100%;
+        width: 80%;
         line-height: 1.5;
     }    
 }
