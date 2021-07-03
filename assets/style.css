@@ -195,6 +195,50 @@ header nav ul li a:hover {
 
 }
 
+.contact-me-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    width: 69%;
+    background-color:rgba(20, 33, 61, .8);
+    border-right: 5px solid var(--yellow);
+    border-left: 5px solid var(--yellow);
+    color: var(--light-color);
+}
+
+.secondary-title {
+    color: var(--yellow);
+    text-shadow:2px 2px 10px rgba(0, 0, 0, 0.8);
+    font-size: 35px;
+    padding: 15px;
+}
+
+.contact-me-wrapper ul {
+    display:flex; 
+    justify-content: space-between;
+    list-style:none;
+    padding-top:25px;
+}
+
+.contact-me-wrapper ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.contact-me-wrapper ul li a:hover {
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.contact-me-wrapper img {
+    width: auto;
+    height:45px;
+    margin-right: 5px;
+    flex: 1;
+    
+}
 
 
 
